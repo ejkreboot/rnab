@@ -25,11 +25,7 @@ get_current_transactions <- function(budget, last_knowledge=NULL, token = NULL) 
     url <- paste0(url, "&last_knowledge_of_server=", last_knowledge)
   }
   dat <- yget(url, token)$data$transactions
-  names <- names(dat[[1]])
-  dat <- as.data.frame(t(sapply(dat, rbind)))
-  colnames(dat) <- names
-  dat$amount <- as.numeric(dat$amount)
-  return(dat)
+  return(l_of_l_to_df(dat))
 }
 
 #' Put a transaction (to modify)
