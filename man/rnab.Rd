@@ -2,9 +2,52 @@
 % Please edit documentation in R/rnab-package.R
 \docType{package}
 \name{rnab-package}
-\alias{rnab}
 \alias{rnab-package}
-\title{RNAB Package}
+\alias{_PACKAGE}
+\alias{rnab}
+\alias{\dontrun{}
+\alias{library(rnab)}
+\alias{#}
+\alias{get}
+\alias{a}
+\alias{list}
+\alias{of}
+\alias{your}
+\alias{budgets}
+\alias{<-}
+\alias{get_budget_names(YOUR_TOKEN)}
+\alias{summary}
+\alias{activity}
+\alias{month}
+\alias{to}
+\alias{date}
+\alias{for}
+\alias{the}
+\alias{first}
+\alias{budget}
+\alias{in}
+\alias{YNAB's}
+\alias{(which}
+\alias{may}
+\alias{be}
+\alias{only}
+\alias{if}
+\alias{you}
+\alias{have}
+\alias{one.)}
+\alias{this_month}
+\alias{get_current_month(1,}
+\alias{YOUR_TOKEN);}
+\alias{}}
+\title{RNAB Package
+
+These functions are used to convert}
+\arguments{
+\item{budget}{integer index or UUID of desired budget}
+
+\item{token}{API token (may be omitted if specified in YNAB_TOKEN
+environment variable.}
+}
 \description{
 This package provides an interface to the API exposed by You Need A Budget (youneedabudget.com).
 }
@@ -45,4 +88,7 @@ This package provides an interface to the API exposed by You Need A Budget (youn
 \link[rnab]{put_transaction}
 }
 
+\examples{
+# Stringify some data
+}
 \keyword{internal}
