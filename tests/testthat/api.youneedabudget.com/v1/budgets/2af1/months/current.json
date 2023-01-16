@@ -1,0 +1,58 @@
+{
+    "data": {
+        "month": {
+            "month": "2023-01-01",
+            "note": null,
+            "income": 9898770,
+            "budgeted": 0,
+            "activity": -1185850,
+            "to_be_budgeted": 9898770,
+            "age_of_money": null,
+            "deleted": false,
+            "categories": [
+                {
+                    "id": "1ef4",
+                    "category_group_id": "cca5",
+                    "name": "Kid's Activities",
+                    "hidden": false,
+                    "original_category_group_id": null,
+                    "note": null,
+                    "budgeted": 0,
+                    "activity": 0,
+                    "balance": 0,
+                    "goal_type": "NEED",
+                    "goal_creation_month": "2023-01-01",
+                    "goal_target": 609000,
+                    "goal_target_month": null,
+                    "goal_percentage_complete": 0,
+                    "goal_months_to_budget": 1,
+                    "goal_under_funded": 609000,
+                    "goal_overall_funded": 0,
+                    "goal_overall_left": 609000,
+                    "deleted": false
+                },
+                {
+                    "id": "c2a8",
+                    "category_group_id": "bc33",
+                    "name": "Auto Payment",
+                    "hidden": false,
+                    "original_category_group_id": null,
+                    "note": null,
+                    "budgeted": 0,
+                    "activity": 0,
+                    "balance": 0,
+                    "goal_type": "NEED",
+                    "goal_creation_month": "2023-01-01",
+                    "goal_target": 200000,
+                    "goal_target_month": null,
+                    "goal_percentage_complete": 0,
+                    "goal_months_to_budget": 1,
+                    "goal_under_funded": 200000,
+                    "goal_overall_funded": 0,
+                    "goal_overall_left": 200000,
+                    "deleted": false
+                }
+            ]
+        }
+    }
+}

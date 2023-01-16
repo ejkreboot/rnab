@@ -1,0 +1,107 @@
+{
+    "data": {
+        "budgets": [
+            {
+                "id": "9b70efe7-8417-4de0-a5ce-97a592732af1",
+                "name": "Kort Family 2023",
+                "last_modified_on": "2023-01-13T15:47:41+00:00",
+                "first_month": "2023-01-01",
+                "last_month": "2023-01-01",
+                "date_format": {
+                    "format": "MM/DD/YYYY"
+                },
+                "currency_format": {
+                    "iso_code": "USD",
+                    "example_format": "123,456.78",
+                    "decimal_digits": 2,
+                    "decimal_separator": ".",
+                    "symbol_first": true,
+                    "group_separator": ",",
+                    "currency_symbol": "$",
+                    "display_symbol": true
+                }
+            },
+            {
+                "id": "fc1c085e-1f75-458f-b5a7-b0c8b469f249",
+                "name": "Family Budget (Archived on 2022-04-03)",
+                "last_modified_on": "2022-03-07T17:32:08+00:00",
+                "first_month": "2022-02-01",
+                "last_month": "2022-04-01",
+                "date_format": {
+                    "format": "MM/DD/YYYY"
+                },
+                "currency_format": {
+                    "iso_code": "USD",
+                    "example_format": "123,456.78",
+                    "decimal_digits": 2,
+                    "decimal_separator": ".",
+                    "symbol_first": true,
+                    "group_separator": ",",
+                    "currency_symbol": "$",
+                    "display_symbol": true
+                }
+            },
+            {
+                "id": "b9841868-c584-4230-a2f3-e29116e59fab",
+                "name": "My Budget (Archived on 2021-04-23)",
+                "last_modified_on": "2021-04-23T21:18:52+00:00",
+                "first_month": "2021-04-01",
+                "last_month": "2021-05-01",
+                "date_format": {
+                    "format": "MM/DD/YYYY"
+                },
+                "currency_format": {
+                    "iso_code": "USD",
+                    "example_format": "123,456.78",
+                    "decimal_digits": 2,
+                    "decimal_separator": ".",
+                    "symbol_first": true,
+                    "group_separator": ",",
+                    "currency_symbol": "$",
+                    "display_symbol": true
+                }
+            },
+            {
+                "id": "c3cd7ab9-3e57-4d04-95e9-a0f937d89be4",
+                "name": "Kort Family Budget (Archived on 2022-02-28)",
+                "last_modified_on": "2022-03-01T00:31:21+00:00",
+                "first_month": "2021-04-01",
+                "last_month": "2022-04-01",
+                "date_format": {
+                    "format": "MM/DD/YYYY"
+                },
+                "currency_format": {
+                    "iso_code": "USD",
+                    "example_format": "123,456.78",
+                    "decimal_digits": 2,
+                    "decimal_separator": ".",
+                    "symbol_first": true,
+                    "group_separator": ",",
+                    "currency_symbol": "$",
+                    "display_symbol": true
+                }
+            },
+            {
+                "id": "6b7521b0-739c-44e7-96bf-093db02b2552",
+                "name": "Family Budget 2022 (Archived on 2023-01-11)",
+                "last_modified_on": "2023-01-11T20:31:07+00:00",
+                "first_month": "2022-04-01",
+                "last_month": "2023-01-01",
+                "date_format": {
+                    "format": "MM/DD/YYYY"
+                },
+                "currency_format": {
+                    "iso_code": "USD",
+                    "example_format": "123,456.78",
+                    "decimal_digits": 2,
+                    "decimal_separator": ".",
+                    "symbol_first": true,
+                    "group_separator": ",",
+                    "currency_symbol": "$",
+                    "display_symbol": true
+                }
+            }
+        ],
+        "default_budget": null
+    }
+}

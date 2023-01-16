@@ -1,0 +1,37 @@
+{
+    "data": {
+        "accounts": [
+            {
+                "id": "37bfffa2-59b7-4673-b844-b3a887368482",
+                "name": "Acct 1",
+                "type": "checking",
+                "on_budget": true,
+                "closed": false,
+                "note": null,
+                "balance": 66820,
+                "cleared_balance": 66820,
+                "uncleared_balance": 0,
+                "transfer_payee_id": "f7feef67-5799-4605-b02e-60cb0b5c12b0",
+                "direct_import_linked": true,
+                "direct_import_in_error": false,
+                "deleted": false
+            },
+            {
+                "id": "0c3d5c09-b233-4a27-a688-55f4dff32b9f",
+                "name": "Acct 2",
+                "type": "creditCard",
+                "on_budget": true,
+                "closed": false,
+                "note": null,
+                "balance": -8530,
+                "cleared_balance": -8530,
+                "uncleared_balance": 0,
+                "transfer_payee_id": "5cce290d-4a89-46b4-8956-cde97651a0cc",
+                "direct_import_linked": true,
+                "direct_import_in_error": false,
+                "deleted": false
+            }
+        ],
+        "server_knowledge": 124
+    }
+}
