@@ -1,13 +1,5 @@
 globalVariables("g")
 
-CATEGORIES = NULL;
-
-if(nchar(Sys.getenv("YNAB_CATEGORIES"))) {
-  cats <- gsub(", ", ",", Sys.getenv("YNAB_CATEGORIES"))
-  cats <- gsub("^ ", "", cats)
-  CATEGORIES = strsplit(cats, ",")[[1]]
-}
-
 #' Get categories for specified budget
 #'
 #' @param budget the uuid, name, or index of the desired budget
@@ -45,10 +37,19 @@ get_categories <- function(budget, last_knowledge=NULL, token = NULL) {
   }
   categories <- as.data.frame(categories)
   r <- inner_join(categories, group_info, by=c("category_group_id"))
+
+  CATEGORIES = NULL
+
+  if(nchar(Sys.getenv("YNAB_CATEGORIES"))) {
+    cats <- gsub(", ", ",", Sys.getenv("YNAB_CATEGORIES"))
+    cats <- gsub("^ ", "", cats)
+    CATEGORIES = strsplit(cats, ",")[[1]]
+  }
   if(!is.null(CATEGORIES)) {
     ix <- which(r$category_name %in% CATEGORIES)
     r <- r[ix,]
   }
+
   r
 }
 
