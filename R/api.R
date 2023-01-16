@@ -1,3 +1,6 @@
+
+#' @
+
 #' Core GET request wrapper
 #'
 #' @param endpoint the API endpoint to request.
