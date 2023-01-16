@@ -37,7 +37,7 @@ get_current_transactions <- function(budget, last_knowledge=NULL, token = NULL) 
 #'
 #' @return http response
 #' @importFrom uuid as.UUID
-#' @importFrom jsonlite toJSON
+#' @importFrom jsonlite toJSON unbox
 #' @export
 put_transaction <- function(budget, transaction, token = NULL) {
   id <- as.UUID(budget)
