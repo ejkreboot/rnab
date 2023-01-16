@@ -47,6 +47,5 @@ put_transaction <- function(budget, transaction, token = NULL) {
   }
 
   url <- paste0("budgets/", id, "/transactions/", transaction$id)
-  yput(url, toJSON(list(transaction = sapply(transaction, unlist)),
-                  auto_unbox = TRUE))
+  yput(url, toJSON(list(transaction=unbox(tr[1,]))))
 }

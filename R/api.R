@@ -50,6 +50,8 @@ yput <- function(endpoint, body, token = NULL) {
   r  <- PUT(url,
             body = body,
             add_headers('Content-Type' = "application/json", 'Authorization' = paste("Bearer", token)))
+  print(httr::headers(r))
+  print(r)
   if(status_code(r) == 200) {
     return(TRUE)
   } else {
