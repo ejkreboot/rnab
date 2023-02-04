@@ -56,3 +56,30 @@ yput <- function(endpoint, body, token = NULL) {
     return(FALSE)
   }
 }
+
+
+#' Core POST request wrapper
+#'
+#' @param endpoint the API endpoint to request.
+#' @param body data to send to the endpoint
+#' @param token API token to use. (May be omitted if YNAB_TOKEN env variable
+#'   is set.)
+#'
+#' @return response to request (in JSON format)
+#' @importFrom httr POST add_headers
+#' @export
+ypost <- function(endpoint, body, token = NULL) {
+  if(is.null(token)) {
+    t = Sys.getenv("YNAB_TOKEN")
+    if(nchar(t) > 0) {
+      token <- t
+    } else {
+      stop("API Token must be provided as argument or stored in YNAB_TOKEN environment variable.")
+    }
+  }
+  url <- paste0("https://api.youneedabudget.com/v1/", endpoint)
+  r  <- POST(url,
+            body = body,
+            add_headers('Content-Type' = "application/json", 'Authorization' = paste("Bearer", token)))
+  content(r)
+}

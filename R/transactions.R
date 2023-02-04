@@ -2,6 +2,26 @@ EXCLUDE_CATEGORIES <- c(
   "Starting Balance"
 )
 
+#' Import transactions from linked accounts.
+#'
+#' @param budget the uuid, name, or index of the desired budget
+#' @param token API token to use. (May be omitted if YNAB_TOKEN env variable
+#'   is set.)
+#'
+#' @return number of imported transactions.
+#' @importFrom uuid as.UUID
+#' @export
+update_transactions <- function(budget, token = NULL) {
+  id <- as.UUID(budget)
+  categories <- NULL
+  if(is.na(id)) {
+    id <-  get_budget_id(budget, token)
+  }
+  url <- paste0("budgets/", id, "/transactions/import")
+  dat <- ypost(url, token)$data$transaction_ids
+  return(length(dat))
+}
+
 #' Get transactions for current month
 #'
 #' @param budget the uuid, name, or index of the desired budget
