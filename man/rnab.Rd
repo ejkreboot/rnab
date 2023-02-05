@@ -5,51 +5,19 @@
 \alias{rnab-package}
 \alias{_PACKAGE}
 \alias{rnab}
-\alias{\dontrun{}
-\alias{library(rnab)}
-\alias{#}
-\alias{get}
-\alias{a}
-\alias{list}
-\alias{of}
-\alias{your}
-\alias{budgets}
-\alias{<-}
-\alias{get_budget_names(YOUR_TOKEN)}
-\alias{summary}
-\alias{activity}
-\alias{month}
-\alias{to}
-\alias{date}
-\alias{for}
-\alias{the}
-\alias{first}
-\alias{budget}
-\alias{in}
-\alias{YNAB's}
-\alias{(which}
-\alias{may}
-\alias{be}
-\alias{only}
-\alias{if}
-\alias{you}
-\alias{have}
-\alias{one.)}
-\alias{this_month}
-\alias{get_current_month(1,}
-\alias{YOUR_TOKEN);}
-\alias{}}
-\title{RNAB Package
-
-These functions are used to convert}
-\arguments{
-\item{budget}{integer index or UUID of desired budget}
-
-\item{token}{API token (may be omitted if specified in YNAB_TOKEN
-environment variable.}
-}
+\title{RNAB Package}
 \description{
-This package provides an interface to the API exposed by You Need A Budget (youneedabudget.com).
+This package provides a thin wrapper around the
+\href{https://api.youneedabudget.com/}{YNAB API} for incorporation into
+your R projects. See man pages for individual functions (linked below)
+for details.
+
+Note that to use these functions you will need an
+\href{https://api.youneedabudget.com/#quick-start}{API token} for your YNAB.
+You can provide your token to each function call as an argument,
+but it will be simpler to set the YNAB_TOKEN environment variable instead.
+You can do this from an R session with:
+\code{Sys.setenv("YNAB_TOKEN" = "YOUR_YNAB_TOKEN")}
 }
 \section{Functions}{
 
@@ -86,9 +54,8 @@ This package provides an interface to the API exposed by You Need A Budget (youn
 \link[rnab]{get_current_transactions}
 
 \link[rnab]{put_transaction}
+
+\link[rnab]{update_transactions}
 }
 
-\examples{
-# Stringify some data
-}
 \keyword{internal}

@@ -1,14 +1,22 @@
 #' @keywords internal
 #' @title RNAB Package
 #'
-#' These functions are used to convert
-#
+#' @description
+#' This package provides a thin wrapper around the
+#' \href{https://api.youneedabudget.com/}{YNAB API} for incorporation into
+#' your R projects. See man pages for individual functions (linked below)
+#' for details.
+#'
+#' Note that to use these functions you will need an
+#' \href{https://api.youneedabudget.com/#quick-start}{API token} for your YNAB.
+#' You can provide your token to each function call as an argument,
+#' but it will be simpler to set the YNAB_TOKEN environment variable instead.
+#' You can do this from an R session with:
+#' \code{Sys.setenv("YNAB_TOKEN" = "YOUR_YNAB_TOKEN")}
+#'
 #' @rdname rnab
-#' @param budget integer index or UUID of desired budget
-#' @param token API token (may be omitted if specified in YNAB_TOKEN
-#'   environment variable.
-#' @examples # Stringify some data
-#' @aliases rnab
+#'
+#' @examples
 #'
 #' \dontrun{
 #' library(rnab)
@@ -56,6 +64,9 @@
 #'
 #' \link[rnab]{put_transaction}
 #'
+#' \link[rnab]{update_transactions}
+#'
+#' @aliases rnab
 "_PACKAGE"
 
 ## usethis namespace: start

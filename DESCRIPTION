@@ -1,7 +1,7 @@
 Package: rnab
 Type: Package
 Title: An R interface to the YNAB API
-Version: 0.1.0
+Version: 0.2.0
 Author: Eric J. Kort
 Maintainer: Eric J. Kort <eric@ericjkort.com>
 Description: This package provides an interface to the API exposed by 
