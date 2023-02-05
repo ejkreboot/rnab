@@ -50,10 +50,10 @@ this_month <- get_current_month(1, YOUR_TOKEN);
 ## Function List
 
 For a complete list of functions and links to their help pages enter the 
-following in an R session and follow the resulting link:
+following in an R session:
 
 ```
-??rnab
+?'rnab-package'
 ```
 
 
