@@ -45,6 +45,9 @@ get_current_transactions <- function(budget, last_knowledge=NULL, token = NULL) 
     url <- paste0(url, "&last_knowledge_of_server=", last_knowledge)
   }
   dat <- yget(url, token)$data$transactions
+  # we cannot handle subtransaction yet and they break the down stream
+  # data wrangling...
+  dat <- lapply(dat, function(x) { x$subtransactions <- list(); x})
   return(l_of_l_to_df(dat))
 }
 
